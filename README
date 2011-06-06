@@ -1,0 +1,28 @@
+Clippy for codeigniter
+
+Oroginal project by mojombo https://github.com/mojombo/clippy by https://github.com/mojombo/
+"Clippy is a very simple Flash widget that makes it possible to place arbitrary text onto the client's clipboard."
+---------------------------------------------------------------------------------------------------------------------------
+
+Ported as helper for CI by vamsi
+
+Instructions :
+
+*Move the clippy_helper.php to your application/helpers directory .
+*Move the clippy.swf as to a directory , usually where you host your static content.
+*Edit clippy_helper.php and change $clippy_url to the location where clippy.swf is located.
+*Now you can use the helper in your controllers/views , etc.
+*Load the helper in your controller $this->load->helper('clippy_helper');
+*Then you can use a new function called clipit(); in your controller/view, etc.
+
+Examples  :
+
+<?php echo clipit(); ?>
+
+<?php echo clipit("CI is awesome"); ?>
+
+<?php echo clipit('Github <3');?>
+
+
+
+visit : http://partialbits.com for help 
